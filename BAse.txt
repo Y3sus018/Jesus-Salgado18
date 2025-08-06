@@ -1,3 +1,5 @@
+Listo mi profe
+
 CREATE TABLE IF NOT EXISTS productos (
     id INT(11) NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(255) NOT NULL,
