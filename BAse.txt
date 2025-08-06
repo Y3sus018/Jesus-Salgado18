@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS productos (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2) NOT NULL,
+    stock INT(11) NOT NULL DEFAULT 0,
+    marca VARCHAR(100),
+    modelo VARCHAR(100),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO productos (nombre, descripcion, precio, stock, marca, modelo) VALUES
+('Laptop HP Pavilion 14', 'Portátil con procesador Intel Core i5, 8GB RAM y 256GB SSD.', 699.99, 20, 'HP', 'Pavilion 14'),
+('Monitor LG UltraWide 29"', 'Monitor UltraWide con resolución Full HD y pantalla IPS.', 289.50, 25, 'LG', '29WN600'),
+('Teclado Logitech K380', 'Teclado Bluetooth compacto y compatible con múltiples dispositivos.', 49.99, 60, 'Logitech', 'K380'),
+('Mouse Razer DeathAdder V2', 'Mouse ergonómico para gaming con sensor óptico de alta precisión.', 69.90, 40, 'Razer', 'DeathAdder V2'),
+('Disco SSD Kingston 480GB', 'Unidad de estado sólido SATA de 480GB para mejorar el rendimiento del sistema.', 55.00, 75, 'Kingston', 'A400'),
+('Impresora Epson EcoTank L3210', 'Impresora multifunción con sistema de tinta continua y bajo costo por página.', 185.00, 10, 'Epson', 'EcoTank L3210'),
+('Tablet Lenovo Tab M10', 'Tablet de 10.1 pulgadas con Android, 4GB RAM y 64GB almacenamiento.', 159.99, 22, 'Lenovo', 'Tab M10'),
+('Auriculares JBL Tune 510BT', 'Auriculares inalámbricos con sonido JBL Pure Bass y 40 horas de batería.', 39.95, 50, 'JBL', 'Tune 510BT'),
+('Webcam Logitech C920s', 'Cámara web HD 1080p con micrófono incorporado y tapa de privacidad.', 89.99, 15, 'Logitech', 'C920s'),
+('Smartwatch Huawei Watch Fit', 'Reloj inteligente con pantalla AMOLED y monitoreo de salud 24/7.', 99.00, 30, 'Huawei', 'Watch Fit');
